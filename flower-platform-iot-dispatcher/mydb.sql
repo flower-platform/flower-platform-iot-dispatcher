@@ -1,17 +1,33 @@
+/* license-start
+ * 
+ * Copyright (C) 2008 - 2015 Crispico Resonate, <http://www.crispico.com/>.
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation version 3.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details, at <http://www.gnu.org/licenses/>.
+ * 
+ * license-end
+ */
+
 DROP TABLE IF EXISTS `resources`;
 DROP TABLE IF EXISTS `boards`;
 DROP TABLE IF EXISTS `rappgroups`;
 
 CREATE TABLE `boards` (
   `ID` bigint(20) NOT NULL,
-  `NAME` varchar(20) NOT NULL,
+  `NAME` varchar(64) NOT NULL,
   `RAPPGROUP_ID` bigint(20) NOT NULL,
-  `DOWNLOAD_KEY` varchar(20) NOT NULL
+  `DOWNLOAD_KEY` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE `rappgroups` (
   `ID` bigint(20) NOT NULL,
-  `NAME` varchar(20) NOT NULL
+  `NAME` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE `resources` (
