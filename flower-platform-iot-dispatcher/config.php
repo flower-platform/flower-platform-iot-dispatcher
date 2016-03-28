@@ -17,10 +17,12 @@
  * license-end
  */
 
-$dbhost = "eu-cdbr-azure-north-d.cloudapp.net";
-$dbuser = "ba2ed912b0f1a1";
-$dbpass = "352fe328";
-$dbname = "dbupdown";
+$dbhost = "ftp-server";
+$dbuser = "ftp-username";
+$dbpass = "ftp-password";
+$dbname = "databse-name";
+
+/* change this as your wishes */
 
 $serverUploadKey = "upkey";
 $serverSignature = "signature";
